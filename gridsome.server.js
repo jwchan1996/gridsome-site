@@ -16,5 +16,9 @@ module.exports = function (api) {
       path: '/my-page',
       component: './src/templates/MyPage.vue'
     })
+    createPage({
+      path: '/user/profile/:name',
+      component: './src/templates/UserName.vue'
+    })
   })
 }
