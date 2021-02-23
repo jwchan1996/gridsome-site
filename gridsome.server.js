@@ -15,6 +15,8 @@ module.exports = function (api) {
     const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts')
 
     for (const item of data) {
+      // 给集合添加节点，节点需要 src/tempaltes/{collection}.vue 模板生成对应的页面
+      // 模板文件名需要与集合名称一致
       collection.addNode({
         id: item.id,
         title: item.title,

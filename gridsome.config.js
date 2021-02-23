@@ -8,6 +8,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteDescription: '大前端',
   plugins: [],
+  // 配置集合名称对应的模板
   templates: {
     Post: [
       {
